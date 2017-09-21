@@ -55,8 +55,31 @@ namespace TesterA
 			{
 				if (number < highest)
 					max = Math.Max(number, min);
-				Console.WriteLine($"Minsta under 0 är: {max}");
+				Console.WriteLine($"Största under 0 är: {max}");
 			}
+
+
+			//Write a double that converts to an int, alert if the characters aren't numbers
+			double Base;
+			while (true)
+			{
+				if (double.TryParse(Console.ReadLine(), out Base))
+				{
+					break;
+				}
+				else
+				{
+					Console.WriteLine("Det där vart inte ett giltligt decimal tal, vänligen försök igen.");
+				}
+			}
+
+			//Same thing but less code
+			int år;
+			while (!int.TryParse(Console.ReadLine(), out år))
+			{
+				Console.WriteLine("Ogiltigt tal");
+			}
+
 
 		}
 	}
