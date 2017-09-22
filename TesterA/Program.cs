@@ -82,7 +82,13 @@ namespace TesterA
 			}
 			Console.WriteLine(temp);
 
+			//And another way of getting the first digit
+			var number2 = 550;
+			var result2 = Math.Floor(number2 / Math.Pow(10, Math.Floor(Math.Log10(number2))));
 
+			//Getting the first digit by converting to a string
+			var number = 550;
+			var result = number.ToString().Substring(0, 1);
 
 
 			//Write a double and alert if the characters aren't numbers
