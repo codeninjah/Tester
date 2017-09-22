@@ -62,8 +62,16 @@ namespace TesterB
 			Console.WriteLine(multipletoone2);
 
 			//If you want a certain string to print out, in this case, the one at position 0 in multiplestrings2
-			string multi = multiplestrings2[0];
+			string multi1 = multiplestrings2[0];
+			Console.WriteLine(multi1);
+
+			//if you want 2 certain strings from the array and divided by a blank space
+			string multi2 = string.Join(" ", multiplestrings2[1], multiplestrings2[2]);
+			//you can also do it lik this:
+			string multi = multiplestrings2[1] + " " + multiplestrings2[2];
+			Console.WriteLine("Notice this");
 			Console.WriteLine(multi);
+			Console.WriteLine(multi2);
 
 			//No char, just joining the words into one word
 			string[] multiplestrings3 = { "Alex", "Guy", "Bebelu", "Namn" };
