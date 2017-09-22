@@ -23,6 +23,22 @@ namespace TesterA
 			Console.WriteLine("min is " + min);
 			Console.WriteLine("mnax is " + max);
 
+			//Sort and array of numbers in ascending order
+			Array.Sort(arr);
+			foreach (var num in arr)
+			{
+				Console.Write(num + " ");
+			}
+
+			//Reverse an array
+			//If you want to sort in in descending order, you need to use the "Sort" funtion on the array first(as above),
+			//in order to reverse the whole array. Otherwise, it will just reverse the order of the numbers and not descending
+			Array.Reverse(arr);
+			foreach (var num in arr)
+			{
+				Console.Write(num + " ");
+			}
+
 			int[] arr2 = { 20, 55, 74, 32, 0 };
 			int min2 = arr2.Min();
 			int max2 = arr2.Max();
