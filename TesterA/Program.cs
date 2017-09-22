@@ -59,7 +59,7 @@ namespace TesterA
 			}
 
 
-			//Write a double that converts to an int, alert if the characters aren't numbers
+			//Write a double and alert if the characters aren't numbers
 			double Base;
 			while (true)
 			{
@@ -73,7 +73,7 @@ namespace TesterA
 				}
 			}
 
-			//Same thing but less code
+			//Same thing but less code and with an int instead of a double
 			int år;
 			while (!int.TryParse(Console.ReadLine(), out år))
 			{
