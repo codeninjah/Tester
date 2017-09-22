@@ -61,6 +61,10 @@ namespace TesterB
 			string multipletoone2 = string.Join(",", multiplestrings);
 			Console.WriteLine(multipletoone2);
 
+			//If you want a certain string to print out, in this case, the one at position 0 in multiplestrings2
+			string multi = multiplestrings2[0];
+			Console.WriteLine(multi);
+
 			//No char, just joining the words into one word
 			string[] multiplestrings3 = { "Alex", "Guy", "Bebelu", "Namn" };
 			string multipletoone3 = string.Join("", multiplestrings);
@@ -77,9 +81,8 @@ namespace TesterB
 				Console.WriteLine(index);
 				start = index + 1;
 			}
+			
 
-
-
-		}
+	}
 	}
 }
