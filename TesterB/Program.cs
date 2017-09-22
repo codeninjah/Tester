@@ -28,6 +28,12 @@ namespace TesterB
 			string lappaihop = string.Join("-", ersätt);
 			Console.WriteLine("\n" + lappaihop);
 
+			//SUbstring from 0 to an index of a certain character
+			string partatill = teststring1.Substring(0, teststring1.IndexOf('f'));
+			Console.WriteLine(partatill);
+			
+
+
 		}
 	}
 }
