@@ -51,13 +51,20 @@ namespace TesterB
 
 
 			//Join multiple strings with a charcter of choice
+			//Here: a blank space
 			string[] multiplestrings = { "Alex", "Guy", "Bebelu", "Namn" };
 			string multipletoone = string.Join(" ", multiplestrings);
 			Console.WriteLine(multipletoone);
 
+			//A comma
 			string[] multiplestrings2 = { "Alex", "Guy", "Bebelu", "Namn" };
 			string multipletoone2 = string.Join(",", multiplestrings);
 			Console.WriteLine(multipletoone2);
+
+			//No char, just joining the words into one word
+			string[] multiplestrings3 = { "Alex", "Guy", "Bebelu", "Namn" };
+			string multipletoone3 = string.Join("", multiplestrings);
+			Console.WriteLine(multipletoone3);
 
 		}
 	}
