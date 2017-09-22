@@ -33,6 +33,7 @@ namespace TesterA
 			//Reverse an array
 			//If you want to sort in in descending order, you need to use the "Sort" funtion on the array first(as above),
 			//in order to reverse the whole array. Otherwise, it will just reverse the order of the numbers and not descending
+			//You can also add 2 numbers below, after arr, separated by coma. The program will sort those numbers for you and just those
 			Array.Reverse(arr);
 			foreach (var num in arr)
 			{
@@ -55,7 +56,6 @@ namespace TesterA
 			int störst = arr3.Where(n => n > 0).Max();
 			Console.WriteLine("Största ovan 0 är: " + störst);
 
-			
 			//Smallest under 0
 			const int lowest = 0;
 			foreach (int number in arr3)

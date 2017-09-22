@@ -89,8 +89,49 @@ namespace TesterB
 				Console.WriteLine(index);
 				start = index + 1;
 			}
-			
 
-	}
+			//if you want uppercases first in order
+			List<string> l = new List<string>();
+			l.Add("smtp:a");
+			l.Add("smtp:c");
+			l.Add("SMTP:b");
+			l.Add("SMTP:d");
+
+			l.Sort(StringComparer.Ordinal);
+
+			for (int i = 0; i < l.Count; i++)
+			{
+				Console.WriteLine(" " + l[i]);
+			}
+
+
+			//if you want lowercases first in order
+			List<string> m = new List<string>();
+			m.Add("smtp:a");
+			m.Add("smtp:c");
+			m.Add("SMTP:b");
+
+			m.OrderByDescending(item => item).ToList();
+
+			foreach (var lowercase in m)
+			{
+				Console.WriteLine(lowercase);
+			}
+
+
+			//If you want to ignore lowers and uppers and instead just order by the alphabet
+			List<string> x = new List<string>();
+			x.Add("smtp:a");
+			x.Add("smtp:c");
+			x.Add("SMTP:b");
+			x.Sort();
+
+			foreach (var lowercase in x)
+			{
+				Console.WriteLine(lowercase);
+			}
+
+
+		}
 	}
 }
