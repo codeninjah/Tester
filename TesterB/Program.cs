@@ -66,6 +66,18 @@ namespace TesterB
 			string multipletoone3 = string.Join("", multiplestrings);
 			Console.WriteLine(multipletoone3);
 
+			//All indexes of a certain character, in this case "o"
+			int start = 0;
+			string a = "potatismos";
+			int index;
+			while ((index = a.IndexOf('o', start)) >= 0)
+			{
+				Console.WriteLine(index);
+				start = index + 1;
+			}
+
+
+
 		}
 	}
 }
