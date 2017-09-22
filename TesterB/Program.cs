@@ -72,6 +72,8 @@ namespace TesterB
 			int index;
 			while ((index = a.IndexOf('o', start)) >= 0)
 			{
+				//If you want the place without starting from 0, but from 1, then write the following line
+				//index += 1;
 				Console.WriteLine(index);
 				start = index + 1;
 			}
