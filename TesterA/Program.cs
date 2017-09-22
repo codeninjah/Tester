@@ -87,8 +87,8 @@ namespace TesterA
 			var result2 = Math.Floor(number2 / Math.Pow(10, Math.Floor(Math.Log10(number2))));
 
 			//Getting the first digit by converting to a string
-			var number = 550;
-			var result = number.ToString().Substring(0, 1);
+			var number3 = 550;
+			var result = number3.ToString().Substring(0, 1);
 
 
 			//Write a double and alert if the characters aren't numbers
