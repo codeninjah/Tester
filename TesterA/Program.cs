@@ -51,10 +51,10 @@ namespace TesterA
 			int minst = arr3.Where(n => n > 0).Min();
 			Console.WriteLine("Minsta ovan 0 är: " + minst);
 
-
 			//Gets the biggest number after 0
 			int störst = arr3.Where(n => n > 0).Max();
 			Console.WriteLine("Största ovan 0 är: " + störst);
+
 
 			//Smallest under 0
 			const int lowest = 0;
