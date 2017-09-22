@@ -46,7 +46,7 @@ namespace TesterA
 			{
 				if (number < lowest)
 					min = Math.Min(number, min);
-				Console.WriteLine($"Minsta under 0 är: {min}");
+				Console.WriteLine($"Minsta talet under 0 är: {min}");
 			}
 
 			//Strörsta under 0
@@ -55,7 +55,7 @@ namespace TesterA
 			{
 				if (number < highest)
 					max = Math.Max(number, min);
-				Console.WriteLine($"Största under 0 är: {max}");
+				Console.WriteLine($"Största talet under 0 är: {max}");
 			}
 
 
