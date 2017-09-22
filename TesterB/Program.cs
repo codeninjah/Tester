@@ -35,7 +35,7 @@ namespace TesterB
 
 			//Split at different elements, print the result and then join the words with a blank space
 			string teststring2 = "testing for-a,couple-of;spliters";
-			char[] splitWith = { '-', ',', '-', ';' };
+			char[] splitWith = { ' ', '-', ',', '-', ';' };
 			Console.WriteLine(teststring2);
 
 			string[] splitMultiple = teststring2.Split(splitWith);
@@ -50,8 +50,14 @@ namespace TesterB
 			Console.WriteLine(joinmultiple);
 
 
-			
+			//Join multiple strings with a charcter of choice
+			string[] multiplestrings = { "Alex", "Guy", "Bebelu", "Namn" };
+			string multipletoone = string.Join(" ", multiplestrings);
+			Console.WriteLine(multipletoone);
 
+			string[] multiplestrings2 = { "Alex", "Guy", "Bebelu", "Namn" };
+			string multipletoone2 = string.Join(",", multiplestrings);
+			Console.WriteLine(multipletoone2);
 
 		}
 	}
