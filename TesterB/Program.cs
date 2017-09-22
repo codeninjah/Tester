@@ -28,9 +28,28 @@ namespace TesterB
 			string lappaihop = string.Join("-", ersätt);
 			Console.WriteLine("\n" + lappaihop);
 
-			//SUbstring from 0 to an index of a certain character
+			//Substring from 0 to an index of a certain character
 			string partatill = teststring1.Substring(0, teststring1.IndexOf('f'));
 			Console.WriteLine(partatill);
+
+
+			//Split at different elements, print the result and then join the words with a blank space
+			string teststring2 = "testing for-a,couple-of;spliters";
+			char[] splitWith = { '-', ',', '-', ';' };
+			Console.WriteLine(teststring2);
+
+			string[] splitMultiple = teststring2.Split(splitWith);
+			foreach (string s in splitMultiple)
+			{
+				Console.Write(s);
+			}
+
+			Console.WriteLine("");
+
+			string joinmultiple = string.Join(" ", splitMultiple);
+			Console.WriteLine(joinmultiple);
+
+
 			
 
 
