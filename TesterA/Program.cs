@@ -74,6 +74,14 @@ namespace TesterA
 				Console.WriteLine($"Största talet under 0 är: {max}");
 			}
 
+			//Get the first digit in a number
+			int temp = 6578965;
+			while (temp >= 10)
+			{
+				temp /= 10;
+			}
+			Console.WriteLine(temp);
+
 
 			//Write a double and alert if the characters aren't numbers
 			double Base;
