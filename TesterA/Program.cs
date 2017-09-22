@@ -83,6 +83,8 @@ namespace TesterA
 			Console.WriteLine(temp);
 
 
+
+
 			//Write a double and alert if the characters aren't numbers
 			double Base;
 			while (true)

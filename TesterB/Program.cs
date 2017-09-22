@@ -132,6 +132,24 @@ namespace TesterB
 			}
 
 
+			//Sort numbers first and then text
+			List<string> voltage = new List<string>() { "1", "5", "500", "LT", "RT", "400", "2B", "7H", "3J" };
+
+			List<string> result = voltage
+			  .OrderBy(s =>
+			  {
+				  int i = 0;
+				  return int.TryParse(s, out i) ? i : int.MaxValue;
+			  })
+			  .ThenBy(s => s)
+			  .ToList();
+
+			foreach (var num in result)
+			{
+				Console.WriteLine(num + " ");
+			}
+
+
 		}
 	}
 }
