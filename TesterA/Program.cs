@@ -40,7 +40,7 @@ namespace TesterA
 			Console.WriteLine("Största ovan 0 är: " + störst);
 
 			
-			//Minsta under 10
+			//Smallest under 0
 			const int lowest = 0;
 			foreach (int number in arr3)
 			{
@@ -49,7 +49,7 @@ namespace TesterA
 				Console.WriteLine($"Minsta talet under 0 är: {min}");
 			}
 
-			//Strörsta under 0
+			//Highest under 0
 			const int highest = 0;
 			foreach (int number in arr3)
 			{
