@@ -27,8 +27,24 @@ namespace TesterC
 					else
 						Console.WriteLine(Lista[i].ToLower());
 				}
-				
+
+
+			//If you want to turn the first letter of an list element to upper
+			List<string> Lista2 = new List<string>();
+			Lista2.Add("test");
+			Lista2.Add("test");
+			Lista2.Add("test");
+			Lista2.Add("test");
+
+			for (int i = 0; i < Lista2.Count; i++)
+			{
+				string bokstav = Lista2[i].ToString();
+				string forstabokstav = bokstav.Substring(0, 1);
+				string resten = bokstav.Substring(1, bokstav.Length - 1);
+
+				Console.WriteLine(forstabokstav.ToUpper() + resten);
 			
+			}
 
 		}
 
