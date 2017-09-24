@@ -46,6 +46,11 @@ namespace TesterC
 			
 			}
 
+
+			//Replace characters in a string
+			string testernastest = "testernastest";
+
+			Console.WriteLine(testernastest.Replace('e', 'a'));
 		}
 
 	}
