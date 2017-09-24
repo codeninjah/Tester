@@ -124,6 +124,10 @@ namespace TesterB
 			x.Add("smtp:a");
 			x.Add("smtp:c");
 			x.Add("SMTP:b");
+			x.Add("student");
+			x.Add("Student");
+			x.Add("students");
+			x.Add("Students");
 			x.Sort();
 
 			foreach (var lowercase in x)
