@@ -17,16 +17,16 @@ namespace TesterC
 			Lista.Add("student");
 
 			//changing to uppercase every string that has place in a place divided by 2 in the list
-				for (int i = 0; i < Lista.Count; i++)
+			for (int i = 0; i < Lista.Count; i++)
+			{
+				if (i % 2 == 0 && i > 0)
 				{
-					if (i % 2 == 0 && i > 0)
-					{
-						Lista[i] = Lista[i].ToUpper();
-						Console.WriteLine(Lista[i].ToString());
-					}
-					else
-						Console.WriteLine(Lista[i].ToLower());
+					Lista[i] = Lista[i].ToUpper();
+					Console.WriteLine(Lista[i].ToString());
 				}
+				else
+					Console.WriteLine(Lista[i].ToLower());
+			}
 
 
 			//If you want to turn the first letter of an list element to upper
@@ -43,7 +43,7 @@ namespace TesterC
 				string resten = bokstav.Substring(1, bokstav.Length - 1);
 
 				Console.WriteLine(forstabokstav.ToUpper() + resten);
-			
+
 			}
 
 
@@ -51,8 +51,9 @@ namespace TesterC
 			string testernastest = "testernastest";
 
 			Console.WriteLine(testernastest.Replace('e', 'a'));
-		}
 
+
+		}
 	}
-	}
+}
 
